@@ -9,7 +9,7 @@ include_directories(${PYTHON_INCLUDE_DIR})
 find_package(Boost COMPONENTS python3 REQUIRED)
 include_directories(${Boost_INCLUDE_DIR})
 
-set(LIB_SOURCE_FILES example.cpp)
+set(LIB_SOURCE_FILES library.cpp example.cpp)
 add_library(example MODULE ${LIB_SOURCE_FILES})
 
 if(APPLE)
